@@ -67,7 +67,7 @@ async function getUserInput() {
 function init() {
 
 
-writeToFile(test.md, generate('data'));
+writeToFile('test.md', generate('data'));
 }
 
 // function call to initialize program
