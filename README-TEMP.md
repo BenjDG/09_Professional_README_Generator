@@ -1,12 +1,21 @@
 #  <<"TITLE">>
 
-<<"Description">>
+<<"Badge of License">>
+<br/>
 
+<<"Description">>
 
 <br/>
 <br/>
 
 ## Table of Contents
+
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 <br/>
 <br/>
@@ -36,13 +45,23 @@
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+<<"Directions">>
 
 <br/>
 <br/>
 
 ## Tests
 
+<<"Directions">>
 
+<br/>
+<br/>
 
 ## Questions
+
+My GitHub Profile  
+<<"link to GitHub profile">>  
+  
+Please direct questions to <<"email address">>.  
+<<"email address">>  
+
