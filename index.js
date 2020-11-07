@@ -1,3 +1,6 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+
 // array of questions for user
 const questions = [
 
@@ -7,8 +10,15 @@ const questions = [
 function writeToFile(fileName, data) {
 }
 
+async function getUserInput() {
+    let response = await 
+    
+}
+
 // function to initialize program
 function init() {
+
+
 
 }
 
