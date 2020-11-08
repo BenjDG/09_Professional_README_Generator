@@ -48,27 +48,32 @@ const questions = [
         type: 'input',
         message: 'Type an email address to contact for the project:',
         name: 'projectEmail'
-    },
-
+    }
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    console.log(fileName);
-    console.log(data);
+    //console.log('filename>>' + fileName);
+    //console.log('data>>' + data);
 }
 
 async function getUserInput() {
     let response = await inquirer.prompt(questions);
     
+    if(response) {
+        //console.dir(response);
+        generate(response);
+    }
 }
 
-// function to initialize program
-function init() {
+getUserInput();
+
+// // function to initialize program
+// function init() {
 
 
-writeToFile('test.md', generate('data'));
-}
+// writeToFile('test.md', generate('data'));
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+//init();
