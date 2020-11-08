@@ -57,7 +57,7 @@ function writeToFile(fileName, data) {
     //console.log('data>>' + data);
 
     fs.writeFile(
-        fileName + '.md',
+        './Output/README.md',
         data,
         (err) => {
             if (err) throw err;

@@ -66,8 +66,7 @@ ${data.projectTest}
 My GitHub Profile  
 ${data.projectGitHub} 
   
-Please direct questions to <<"email address">>.  
-${data.projectEmail}
+Please direct questions to ${data.projectEmail}.  
 `;
 }
 
