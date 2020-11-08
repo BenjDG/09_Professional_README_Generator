@@ -4,7 +4,8 @@ function generateMarkdown(data) {
   return `
 #  ${data.projectTitle}
 
-${data.projectLicense}
+${data.badge}
+
 <br/>
 
 ${data.projectDescription}
@@ -42,7 +43,7 @@ ${data.projectUsage}
 
 ## License
 
-${data.projectLicense}
+[${data.projectLicense}](${data.licenseURL})
 
 <br/>
 <br/>
@@ -61,12 +62,13 @@ ${data.projectTest}
 <br/>
 <br/>
 
-## Questions
+## Questions  
 
-My GitHub Profile  
-${data.projectGitHub} 
+If you have questions you can send me a message in GitHub or to my email address.  
+
+My GitHub profile is [${data.projectGitHub}](https://github.com/${data.projectGitHub})  
   
-Please direct questions to ${data.projectEmail}.  
+Email: ${data.projectEmail}.  
 `;
 }
 
