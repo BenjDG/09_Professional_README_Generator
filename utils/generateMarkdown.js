@@ -2,24 +2,12 @@
 function generateMarkdown(data) {
   //console.dir(data);
   return `
-  ${data.projectTitle}
-  ${data.projectDescription}
-  ${data.projectInstall}
-  ${data.projectUsage}
-  ${data.projectLicense}
-  ${data.projectContribute}
-  ${data.projectTest}
-  ${data.projectEmail}
+#  ${data.projectTitle}
 
-
-
-
-#  <<"TITLE">>
-
-<<"Badge of License">>
+${data.projectLicense}
 <br/>
 
-<<"Description">>
+${data.projectDescription}
 
 <br/>
 <br/>
@@ -38,14 +26,14 @@ function generateMarkdown(data) {
 
 ## Installation
 
-<<"Directions">>
+${data.projectInstall}
 
 <br/>
 <br/>
 
 ## Usage
 
-<<"Directions">>
+${data.projectUsage}
 
 
 <br/>
@@ -54,21 +42,21 @@ function generateMarkdown(data) {
 
 ## License
 
-<<"License">>
+${data.projectLicense}
 
 <br/>
 <br/>
 
 ## Contributing
 
-<<"Directions">>
+${data.projectContribute}
 
 <br/>
 <br/>
 
 ## Tests
 
-<<"Directions">>
+${data.projectTest}
 
 <br/>
 <br/>
@@ -76,10 +64,10 @@ function generateMarkdown(data) {
 ## Questions
 
 My GitHub Profile  
-<<"link to GitHub profile">>  
+${data.projectGitHub} 
   
 Please direct questions to <<"email address">>.  
-<<"email address">>  
+${data.projectEmail}
 `;
 }
 
