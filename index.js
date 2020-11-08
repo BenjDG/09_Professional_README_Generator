@@ -55,14 +55,23 @@ const questions = [
 function writeToFile(fileName, data) {
     //console.log('filename>>' + fileName);
     //console.log('data>>' + data);
+
+    fs.writeFile(
+        fileName + '.md',
+        data,
+        (err) => {
+            if (err) throw err;
+            console.log('The file has been saved!')
+        });
 }
 
 async function getUserInput() {
     let response = await inquirer.prompt(questions);
-    
-    if(response) {
+
+    if (response) {
         //console.dir(response);
-        generate(response);
+        //generate(response);
+        writeToFile(response.projectTitle, generate(response));
     }
 }
 
