@@ -1,10 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  //console.dir(data);
   return `
 #  ${data.projectTitle}
 
-${data.projectLicense}
+${data.badge}
+
 <br/>
 
 ${data.projectDescription}
@@ -42,7 +42,7 @@ ${data.projectUsage}
 
 ## License
 
-${data.projectLicense}
+[${data.projectLicense}](${data.licenseURL})
 
 <br/>
 <br/>
@@ -61,12 +61,13 @@ ${data.projectTest}
 <br/>
 <br/>
 
-## Questions
+## Questions  
 
-My GitHub Profile  
-${data.projectGitHub} 
+If you have questions about the project you can email me, or you can open an issue in the GitHub repository.
+
+My GitHub profile is [${data.projectGitHub}](https://github.com/${data.projectGitHub})  
   
-Please direct questions to ${data.projectEmail}.  
+Email: ${data.projectEmail}.  
 `;
 }
 
