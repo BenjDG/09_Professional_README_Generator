@@ -27,7 +27,9 @@ Node.js is required for this software to work.  Clone the repository from GitHub
 <br/>
 <br/>
 
-## Usage
+## Usage  
+
+[Video Tutorial](https://youtu.be/gop-RkWZYiw)
 
 From the root folder of the repository, open a command line interface and type the command 'node index.js' and then follow the prompts.  When completed, a README file will appear in the Output directory.
 
