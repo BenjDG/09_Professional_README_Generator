@@ -66,30 +66,21 @@ function writeToFile(data) {
 async function getUserInput() {
     let response = await inquirer.prompt(questions);
     if (response) {
-        //console.dir(response);
-
         if(response.projectLicense === 'MIT'){
             response.badge = '![MIT license](https://img.shields.io/badge/license-MIT-green)';
             response.licenseURL = 'https://choosealicense.com/licenses/mit/';
-            //console.log(response.projectLicense)
         };
         if(response.projectLicense === 'GNU GPLv3'){
             response.badge ='![GNU GPLv3 license](https://img.shields.io/badge/license-GNU%20GPLv3-brightgreen)';
             response.licenseURL = 'https://choosealicense.com/licenses/gpl-3.0/';
-            //console.log(response.projectLicense)
         };
         if(response.projectLicense === 'Apache License 2.0'){
             response.badge ='![Apache 2.0 license](https://img.shields.io/badge/license-Apache%202.0-blue)';
             response.licenseURL = 'https://choosealicense.com/licenses/apache-2.0/';
-            //console.log(response.projectLicense)
         };
-        //console.log('badge info:' + response.badge);
-
         writeToFile(generate(response));
     }
 };
-
-
 
 // function to initialize program
 function init() {

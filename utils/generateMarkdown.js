@@ -1,6 +1,5 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  //console.dir(data);
   return `
 #  ${data.projectTitle}
 
@@ -64,7 +63,7 @@ ${data.projectTest}
 
 ## Questions  
 
-If you have questions you can send me a message in GitHub or to my email address.  
+If you have questions about the project you can email me, or you can open an issue in the GitHub repository.
 
 My GitHub profile is [${data.projectGitHub}](https://github.com/${data.projectGitHub})  
   
