@@ -5,8 +5,6 @@ function generateMarkdown(data) {
 
 ${data.badge}
 
-<br/>
-
 ${data.projectDescription}
 
 <br/>

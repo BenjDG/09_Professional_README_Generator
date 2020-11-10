@@ -1,9 +1,7 @@
 
 #  Professional README Generator
 
-![MIT license](https://img.shields.io/badge/license-MIT-green)
-
-<br/>
+![MIT license](https://img.shields.io/badge/license-MIT-green)  
 
 This is a command line program that prompts for input in order to generate a professional looking README file for most software projects.
 
